@@ -1,0 +1,200 @@
+link the stylesheet
+
+            <link rel="stylesheet" href="style.css">
+
+change page to test
+
+        body {
+            background: red;
+        }
+
+Selectors
+    grabbing and manipulating html
+
+    The element Selectors
+        you can select entire elements eg: h1, p , title
+        this applies to all elements with the selected tag
+        its lowest ranking for specificity
+
+            p {
+                color: red;
+            }
+
+    The class Selectors
+        used to slecet elements with a certian class
+        can be used on any elemenet with the class
+
+            .aclass {
+                color: blue;
+            }
+
+    the ID Selectors
+        with certainid names'
+        it can only be used on one elemenet at a time and is selected
+        with the # symbol, however it is posible to use more than once
+
+                #sometext {
+                    color: orange;
+                }
+
+                Headers are least
+                then theres class
+                then theres id
+                then inline styling at the top
+
+
+Psuedoselectors
+
+        hover
+        first child
+        last child
+        nth child (2)       so every second
+        only child
+        link                before visits
+        visited             after visit
+            #google-link:link {
+               color: blue;
+           }
+
+           #google-link:visited {
+               color: red;
+           }
+
+advanced Selectors
+
+        h2 + a {                    the + makes it the next thing after trigger
+            color: red;             regardless of class
+        }
+
+        textarea ~ button {         the ~ makes it the thing in the same class
+            color: purple;
+        }
+
+        ul > li {                   child selector
+            color: blue;
+        }
+
+        ul li {                     descendant selector
+            color: green;
+        }
+
+
+attribute Selectors
+
+h2 [class=subtitle]                 every h2 with class subtitle
+
+img[src=""]                         every img with a certian source
+
+src    =
+    ^
+            ^ anyhting after
+            $ soruce must end with the value
+            * if it contains the value anywhere (beginning middle end)
+
+class     =
+       ^
+
+            ~ only applies if there is 2 classes ie whitespace
+            | if theres multilayered thins with a id after (article-subtitle-id)
+
+
+Properties
+
+    a colon in always needed folllowed by a semi colon
+
+    poperty: value;
+
+The general css rule
+
+    selector {
+        property: value;
+        propety2: value2;
+    }
+
+    once you select something, you need to define something in the css block ( the curly braces {})
+    the property is the thing your going to change, and the value is how your going to change it
+    there can be as many properties inside of one selector.
+
+
+Types of Colors
+
+    css color codes (names)
+        red, blue, green, purple
+
+    hex codes
+        starts with a #
+        then is followed by 3 pairs of numbers/letters (0-9, a-f)
+        ie: blue    #0000ff
+            white   #ffffff
+
+    rgb codes
+        uses rgb values
+            ie: blue  rgb(0, 0, 255)
+                white rgb(255, 255, 255)
+
+Coloring text
+
+    #title {
+        color: rgb(186, 133, 9);
+    }
+
+    .subtitle {
+        color: rgb(219, 168, 50);
+    }
+
+Backgrounds
+
+        background: rgb(204, 229, 255);
+
+
+Images/urls in CSS
+
+    background: url("img/img-1.jpg")
+                                                    both work just one is only image
+    background-image: url("img/img-1.jpg")
+
+More Background Properties
+
+    background-repeat: no-repeat
+                        repeat
+    background-size: cover          will streth over area
+                     contain        will try not to stretch Images
+
+Opacity / Transparency
+
+        a (alpha color code)
+        opacity / Transparency of a Color
+        0 is invisible (fully transparent)
+        1 is visible
+
+    rgba(204, 229, 255, 0.5)
+
+Gradients
+
+        radial gradiants
+            circular start from center
+                background: radial-gradient(circle, red 20%, blue 40%, green 55%);
+                                             elipse is standard shape
+                                             can adjust percentages of each color but must be smallest first then biggest last.
+        linear Gradients
+            start from one side
+            background: linear-gradient(to right, red, blue, green, steelblue, blue);
+                                        to top
+                                        to bottom right
+                                        215deg              we can directly control where we want the gradient to end
+
+
+introduction to types of units
+
+2:04:21
+
+
+
+
+
+
+
+
+
+
+s
