@@ -186,12 +186,110 @@ Gradients
 
 introduction to types of units
 
-2:04:21
+        absolute units
+                cm, mm, inches
+
+        relative units
+                they can be useful for scalling in different size screens
+                    percentages
+                    em  :  is 2em doubles base font size.
+
+        special units
+            pixels
+                    technically an absolute unit but it scales. small pohone is okay, but if 2k or 4k then a 400px image is small.
+                    px :
+                    pt : a bit bigger than a pixel
+                    pc : alot bigger than a pixel 1pc = 12 pt
+
+        style tags
+            70 vw: 70 x 1% of viewport width
+
+Text manipulation
+
+        Text manipulation
+                        things that you can change no matter the font
+
+            text-decoration
+                    none                removes line under link
+                    overline            puts the line on top
+                    underline           normal link
+                    line-through        puts the line through
+
+            text-transform
+                    capitalize
+                    uppercase
+                    lowercase
+
+            text-align
+                    center
+                    left
+                    right
+                    justify
+
+        Font manipulation
+                        things that you can change depending on the font
+
+            font-size
+                1.25em is 25%
+                40 px sets everything to one size
+
+            font-weight
+                    bolding
+                    starts at 100
+                    go up by 100 to usually 800
+
+            font-style
+                    italic
+                    normal
+                    oblique         just a little more than italic
 
 
+Font Families
+
+        collection of fonts with similar
+        serif, sans serif, monospace
+
+            serif
+                little small lines on the ends of letters
+                usually comon in research papers or printed texts
+                    times new roanmn or georgia
+
+            sans serif
+                does not have the little lines which makes it easier to read
+                commonly websites and computers
+                        arial or calibri
+
+            monospace
+                every letter keeps the same space
+                        courier new
 
 
+external fonts (google fonts)
+        this link needs to be above the stylesheet reference or else it wont read.
 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+
+                font-family: 'Lato', sans-serif;
+                font-family: 'Sarabun', sans-serif;
+
+                                    should include the sans serif or serif aspect because its a fallback incase the font is unavailable
+
+
+CSS : The Box Model
+
+        Layout
+            the box model is the most common way to position items
+            flexbox
+            grid
+
+            center              where your content is
+            paddding            the space in between the content and the border
+            border              seperates the padding from the margin, it can be styled but are inivisble by default
+            margin              the layer outside the border
+
+        CSS Borders
+
+        3:00:00
 
 
 
