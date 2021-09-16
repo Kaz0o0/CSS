@@ -29,7 +29,7 @@ Selectors
             }
 
     the ID Selectors
-        with certainid names'
+        with certainid names
         it can only be used on one elemenet at a time and is selected
         with the # symbol, however it is posible to use more than once
 
